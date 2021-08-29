@@ -50,5 +50,5 @@ function SearchAddress({ isScriptLoaded, isScriptLoadSucceed }) {
 
 export default
     scriptLoader(
-        [`https://maps.googleapis.com/maps/api/js?key=AIzaSyD5Nsb8u-jLPd91wxDmrim8imc2IzUS0u4&libraries=places`])
+        [`https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_API_KEY}&libraries=places`])
         (SearchAddress);
